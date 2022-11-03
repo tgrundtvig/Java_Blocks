@@ -1,6 +1,5 @@
 package org.abstractica.javablocks.blocks.connection.firsttest;
 
-import org.abstractica.javablocks.blocks.basic.Output;
 import org.abstractica.javablocks.blocks.connection.PingPongProtocol;
 
 public class SimplePingPongProtokol implements PingPongProtocol<String,String, SimpleHandler>
