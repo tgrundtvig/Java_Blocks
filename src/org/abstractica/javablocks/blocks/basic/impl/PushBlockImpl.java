@@ -26,7 +26,7 @@ public class PushBlockImpl<From, To>
     @Override
     public void put(From item) throws Exception
     {
-        DEBUG(" put(" + item + ")");
+        //DEBUG(" put(" + item + ")");
         if(output == null)
         {
             throw new IllegalStateException("PushBlock's output is null!");

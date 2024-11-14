@@ -31,13 +31,13 @@ public class ThreadBlockImpl<E>
         {
             try
             {
-                DEBUG("Trying to get!");
+                //DEBUG("Trying to get!");
                 E item = input.get();
-                DEBUG("Got: " + item);
+                //DEBUG("Got: " + item);
                 doingOutput = true;
-                DEBUG("Trying to put!");
+                //DEBUG("Trying to put!");
                 output.put(item);
-                DEBUG("Put: " + item);
+                //DEBUG("Put: " + item);
                 doingOutput = false;
                 synchronized (this)
                 {

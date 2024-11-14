@@ -17,7 +17,7 @@ public class FirstTest
 		driver.setOutput(ppBlock);
 		ThreadBlock<Long> timerThread = BasicBlocks.getThreadBlock();
 		ConstantBlock<Long> frequency = BasicBlocks.getConstantBlock(30000L);
-		PushBlock<Long,Long> delay = BasicBlocks.getPushBlock(BasicFunctions.DelayFunction(10000L));
+		PushBlock<Long,Long> delay = BasicBlocks.getPushBlock(BasicFunctions.DelayFunction(1000L));
 		timerThread.setInput(frequency);
 		timerThread.setOutput(delay);
 		delay.setOutput(ppBlock.getTimerConnector());
